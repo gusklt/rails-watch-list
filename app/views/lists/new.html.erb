@@ -1,4 +1,11 @@
 <div class="banner">
   <h1>New list</h1>
-  <%= link_to "Back to your lists", lists_path, class: "btn-ghost" %>
+  <%= link_to "Back to your lists", root_path, class: "btn-ghost" %>
+</div>
+<div class="form"></div>
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit %>
+  <% end %>
 </div>
