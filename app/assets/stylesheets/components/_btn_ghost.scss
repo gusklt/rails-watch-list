@@ -1,4 +1,4 @@
-#btn-ghost {
+.btn-ghost {
   color: #E8E9EB;
   text-decoration: none;
   border: 2px solid rgba(232, 233, 235, 0.5);
@@ -11,5 +11,7 @@
   &:hover {
     opacity: 1;
     border: 2px solid rgba(232, 233, 235, 1);
+    text-decoration: none;
+    color: rgba(232, 233, 235, 1);
   }
 }
